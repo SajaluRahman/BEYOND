@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/home/multimediahero.jpg",
+        url: "/assets/home/logobig.png",
         width: 1200,
         height: 630,
-        alt: "Beyond The Borders Creative Multimedia Studio"
+        alt: "Beyond The Borders — Unlimited Multimedia Solutions"
       }
     ]
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Beyond The Borders — Unlimited Multimedia Solutions",
     description: "London's premier full-service multimedia production company crafting show-stopping content.",
-    images: ["/assets/home/multimediahero.jpg"],
+    images: ["/assets/home/logobig.png"],
   },
   robots: {
     index: true,
