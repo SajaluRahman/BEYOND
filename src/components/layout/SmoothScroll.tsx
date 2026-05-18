@@ -51,19 +51,25 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
       return;
     }
 
-    // Kill all active ScrollTriggers from the previous page to prevent layout bugs & black screens on back navigation
-    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    // Reset standard window scroll immediately
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 
     if (lenisRef.current) {
       lenisRef.current.scrollTo(0, { immediate: true });
-      
-      // Give a small delay for the DOM to update before refreshing ScrollTrigger
-      const timer = setTimeout(() => {
-        ScrollTrigger.refresh();
-      }, 100);
-      
-      return () => clearTimeout(timer);
     }
+
+    // Give a small delay for the DOM to update before refreshing ScrollTrigger
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+      if (lenisRef.current) {
+        lenisRef.current.scrollTo(0, { immediate: true });
+      }
+      ScrollTrigger.refresh();
+    }, 100);
+    
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   return <>{children}</>;

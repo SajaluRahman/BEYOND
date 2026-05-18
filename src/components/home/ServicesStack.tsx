@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import gsap from "gsap";
@@ -18,7 +18,8 @@ const services = [
     description: "Capture life's moments with stunning clarity. From corporate events to editorial shoots, we deliver high-end visuals that tell compelling stories.", 
     image: "/assets/home/PHOTOGRAPHY_BG_.png",
     accent: "VISUAL ART",
-    alignRight: false
+    alignRight: false,
+    link: "/services/photography"
   },
   { 
     number: "02", 
@@ -26,7 +27,8 @@ const services = [
     description: "Creative web design, graphic design, and print solutions that seamlessly blend aesthetics and functionality. Every pixel is crafted with purpose.", 
     image: "/assets/home/webdesign.png",
     accent: "CREATIVE HUB",
-    alignRight: true
+    alignRight: true,
+    link: "/services/digital-design"
   },
   { 
     number: "03", 
@@ -34,7 +36,8 @@ const services = [
     description: "Powerful commercial advertising that captivates your audience and drives real business results through cinematic narratives.", 
     image: "/assets/home/commercial.png",
     accent: "ADVERTISING",
-    alignRight: false
+    alignRight: false,
+    link: "/services/commercials"
   },
   { 
     number: "04", 
@@ -42,7 +45,8 @@ const services = [
     description: "Simplifying complex concepts through dynamic and captivating explainer videos that engage your audience from the very first frame.", 
     image: "/assets/home/explainers.png",
     accent: "STORYTELLING",
-    alignRight: true
+    alignRight: true,
+    link: "/services/explainers"
   },
   { 
     number: "05", 
@@ -50,7 +54,8 @@ const services = [
     description: "Bring your ideas to life with stunning 3D and 2D animation. Character design and motion graphics that push creative boundaries.", 
     image: "/assets/home/3d&2d.png",
     accent: "MOTION ART",
-    alignRight: false
+    alignRight: false,
+    link: "/services/animation"
   },
   { 
     number: "06", 
@@ -58,7 +63,8 @@ const services = [
     description: "Elevate your brand with broadcast-quality video production. Television-grade content created with cinematic precision.", 
     image: "/assets/home/broadcastdesign.png",
     accent: "ON-AIR",
-    alignRight: false
+    alignRight: false,
+    link: "/services/broadcast"
   },
   { 
     number: "07", 
@@ -66,7 +72,8 @@ const services = [
     description: "Preserve your memories by converting analog media to pristine digital formats. Breathing new life into treasured archives.", 
     image: "/assets/home/analogtodigital.png",
     accent: "ARCHIVING",
-    alignRight: true
+    alignRight: true,
+    link: "/services/analog-to-digital"
   },
   { 
     number: "08", 
@@ -74,7 +81,8 @@ const services = [
     description: "Transform events with immersive lighting and stage design. Creating unforgettable moments from concept to execution.", 
     image: "/assets/home/eventdesign.png",
     accent: "EXPERIENCE",
-    alignRight: false
+    alignRight: false,
+    link: "/services/event-design"
   },
   { 
     number: "09", 
@@ -82,13 +90,21 @@ const services = [
     description: "Capturing your most precious moments with cinematic elegance. From intimate ceremonies to grand celebrations, we tell your love story through timeless visuals.", 
     image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2070",
     accent: "LOVE STORIES",
-    alignRight: true
+    alignRight: true,
+    link: "/services/wedding-videography-and-photography"
   },
 ];
 
 export default function ServicesStack() {
   const containerRef = useRef<HTMLDivElement>(null);
   const stickyRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    return () => {
+      // Kill all ScrollTriggers when leaving the page to ensure browser transitions never collapse the layout
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 
   useGSAP(() => {
     if (!containerRef.current || !stickyRef.current) return;
@@ -133,7 +149,7 @@ export default function ServicesStack() {
       });
     }
 
-  }, { scope: containerRef });
+  }, { scope: containerRef, dependencies: [] });
 
   return (
     <section ref={containerRef} className="relative h-auto lg:h-[900vh] bg-[#0a0a0a]" id="services-stack">
@@ -185,7 +201,7 @@ export default function ServicesStack() {
                   
 
                   <Link
-                    href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-').split(',')[0]}`}
+                    href={service.link}
                     className={`inline-flex items-center gap-6 group ${service.alignRight ? "flex-row-reverse" : ""}`}
                   >
                     <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c9a84c] group-hover:bg-[#c9a84c] transition-all duration-500">

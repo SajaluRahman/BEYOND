@@ -57,7 +57,7 @@ export default function FeaturedWorks() {
       },
     });
 
-  }, { scope: sectionRef });
+  }, { scope: sectionRef, dependencies: [] });
 
   return (
     <section ref={sectionRef} className="relative bg-[#0a0a0a] overflow-hidden" id="featured-works">

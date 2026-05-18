@@ -33,6 +33,11 @@ export default function LoadingScreen() {
       setLoading(false);
       if (isInitial) sessionStorage.setItem("hasInitialLoaded", "true");
       
+      // Reset scroll position immediately when loading screen clears
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      
       // Refresh ScrollTrigger after loading screen is gone
       setTimeout(() => {
         import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
