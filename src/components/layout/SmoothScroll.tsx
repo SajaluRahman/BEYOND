@@ -42,8 +42,15 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     };
   }, []);
 
+  const isInitialMount = useRef(true);
+
   // Handle route change scroll reset and GSAP refresh
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+
     // Kill all active ScrollTriggers from the previous page to prevent layout bugs & black screens on back navigation
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 

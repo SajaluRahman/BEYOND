@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/assets/home/logobig.png",
         width: 1200,
         height: 630,
-        alt: "Beyond The Borders — Unlimited Multimedia Solutions"
+        alt: "Beyond The Borders Logo"
       }
     ]
   },
@@ -58,6 +58,15 @@ export const metadata: Metadata = {
     title: "Beyond The Borders — Unlimited Multimedia Solutions",
     description: "London's premier full-service multimedia production company crafting show-stopping content.",
     images: ["/assets/home/logobig.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/assets/home/logo.png", type: "image/png" }
+    ],
+    apple: [
+      { url: "/assets/home/logo.png" }
+    ]
   },
   robots: {
     index: true,
@@ -95,9 +104,7 @@ export default function RootLayout({
               "image": "https://beyondtheborders.co.uk/assets/home/logo.png",
               "url": "https://beyondtheborders.co.uk",
               "logo": "https://beyondtheborders.co.uk/assets/home/logo.png",
-              "telephone": "+447767956510",
-              "email": "beyondthebordersvfx@gmail.com",
-              "description": "London's premier full-service multimedia company specializing in video production, custom web & app development, UI/UX design, digital marketing, and premium wedding coverage.",
+              "description": "London's premier full-service multimedia production company specializing in video production, custom web & app development, UI/UX design, digital marketing, and premium wedding coverage.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "115 Crocus Way",

@@ -38,15 +38,17 @@ export default function ContactContent() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[55vh] flex items-end pb-16 bg-[#0a0a0a] overflow-hidden" id="contact-hero">
-        <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2070"
-          alt="Beyond The Borders Office"
-          fill
-          className="object-cover opacity-35 brightness-[0.4]"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/30 via-[#0a0a0a]/70 to-[#0a0a0a] noise-overlay" />
+      <section className="relative min-h-[50vh] flex items-end pb-16 bg-[#0a0a0a]" id="contact-hero">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2070"
+            alt="Beyond The Borders Creative Workspace"
+            fill
+            className="object-cover opacity-20 brightness-50"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d2b35]/25 via-[#0a0a0a] to-[#0a0a0a]" />
+        </div>
         <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 w-full">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
