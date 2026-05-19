@@ -40,13 +40,13 @@ const services = [
     link: "/services/commercials"
   },
   { 
-    number: "04", 
-    title: "EXPLAINERS", 
-    description: "Simplifying complex concepts through dynamic and captivating explainer videos that engage your audience from the very first frame.", 
-    image: "/assets/home/explainers.png",
-    accent: "STORYTELLING",
+    number: "04",
+    title: "WEDDING VIDEOGRAPHY AND PHOTOGRAPHY", 
+    description: "Capturing your most precious moments with cinematic elegance. From intimate ceremonies to grand celebrations, we tell your love story through timeless visuals.", 
+    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2070",
+    accent: "LOVE STORIES",
     alignRight: true,
-    link: "/services/explainers"
+    link: "/services/wedding-videography-and-photography"
   },
   { 
     number: "05", 
@@ -86,12 +86,12 @@ const services = [
   },
   { 
     number: "09", 
-    title: "WEDDING VIDEOGRAPHY AND PHOTOGRAPHY", 
-    description: "Capturing your most precious moments with cinematic elegance. From intimate ceremonies to grand celebrations, we tell your love story through timeless visuals.", 
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2070",
-    accent: "LOVE STORIES",
+    title: "EXPLAINERS", 
+    description: "Simplifying complex concepts through dynamic and captivating explainer videos that engage your audience from the very first frame.", 
+    image: "/assets/home/explainers.png",
+    accent: "STORYTELLING",
     alignRight: true,
-    link: "/services/wedding-videography-and-photography"
+    link: "/services/explainers"
   },
 ];
 

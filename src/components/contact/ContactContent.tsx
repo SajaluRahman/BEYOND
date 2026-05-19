@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -25,6 +25,27 @@ export default function ContactContent() {
   });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const pkg = params.get("package");
+      if (pkg) {
+        let pkgName = "";
+        if (pkg === "basic") pkgName = "Basic Package";
+        else if (pkg === "standard") pkgName = "Standard Package";
+        else if (pkg === "premium") pkgName = "Premium Package";
+
+        if (pkgName) {
+          setFormData((prev) => ({
+            ...prev,
+            service: "Photography",
+            message: `Hi, I am interested in booking your Wedding Photography & Videography - ${pkgName}. Please contact me with more information!`,
+          }));
+        }
+      }
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

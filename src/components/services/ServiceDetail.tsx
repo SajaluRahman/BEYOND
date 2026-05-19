@@ -38,6 +38,7 @@ interface ServiceDetailProps {
   process: ProcessStep[];
   showcaseItems?: ShowcaseItem[];
   heroImage?: string;
+  children?: React.ReactNode;
 }
 
 export default function ServiceDetail({
@@ -50,6 +51,7 @@ export default function ServiceDetail({
   process,
   showcaseItems,
   heroImage,
+  children,
 }: ServiceDetailProps) {
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -273,6 +275,9 @@ export default function ServiceDetail({
           </div>
         </div>
       </section>
+
+      {/* Embedded Custom Sections */}
+      {children}
 
       {/* CTA Section */}
       <section className="py-24 lg:py-48 bg-[#0a0a0a] relative overflow-hidden" id="service-cta">
