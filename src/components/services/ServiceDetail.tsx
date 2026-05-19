@@ -223,7 +223,7 @@ export default function ServiceDetail({
                         {item.description}
                       </p>
                       
-                      <Link
+                      {/* <Link
                         href="/portfolio"
                         className={`inline-flex items-center gap-6 group ${i % 2 !== 0 ? "flex-row-reverse" : ""}`}
                       >
@@ -235,7 +235,7 @@ export default function ServiceDetail({
                         <span className="text-[0.65rem] tracking-[0.4em] text-white/70 uppercase group-hover:text-white transition-colors">
                           View Project Details
                         </span>
-                      </Link>
+                      </Link> */}
                     </motion.div>
                   </div>
                 </div>

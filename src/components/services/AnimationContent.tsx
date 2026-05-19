@@ -10,7 +10,7 @@ export default function AnimationContent() {
       titleAccent="INTO IMAGINATION"
       description="Elite 3D and 2D animation solutions pushing visual boundaries. We create spectacular CGI assets, narrative character animations, and cutting-edge visual effects for brand campaigns and films."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/3d&2d.png"
       features={[
         { title: "3D CHARACTER MODELING", description: "Bespoke digital character creation, custom texture mappings, and full skeletal rig configurations." },
         { title: "CGI & VISUAL EFFECTS (VFX)", description: "Adding movie-grade visual effects, particles, fluids, and virtual assets seamlessly into real-world video frames." },

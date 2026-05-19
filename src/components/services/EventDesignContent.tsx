@@ -10,7 +10,7 @@ export default function EventDesignContent() {
       titleAccent="IMMERSIVE SPACES"
       description="Creating breathtaking physical experiences through innovative spatial and stage design. We merge structural architecture, cinematic lighting, and state-of-the-art multimedia elements to curate unforgettable corporate and private events."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/eventdesign.png"
       features={[
         { title: "SCENIC STAGE DESIGN", description: "Bespoke stage blueprint design, premium backing structures, custom speaker podiums, and performance sets." },
         { title: "IMMERSIVE LIGHTING SYSTEMS", description: "Designing complex, mood-aligned dynamic lighting sequences and architectural spotlights." },

@@ -10,7 +10,7 @@ export default function ExplainersContent() {
       titleAccent="COMPLEX IDEAS"
       description="Engaging and easy-to-understand explainer videos that convert prospects into clients. We demystify complex technologies, SaaS applications, and enterprise services through creative motion design."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/explainers.png"
       features={[
         { title: "SAAS PRODUCT DEMOS", description: "Bespoke walkthroughs showcasing app interfaces, core workflows, and direct software user benefits." },
         { title: "2D & 3D MOTION GRAPHICS", description: "Vibrant custom vectors and animated scenes visualizing abstract data with absolute clarity." },

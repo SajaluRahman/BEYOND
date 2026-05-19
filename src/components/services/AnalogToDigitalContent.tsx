@@ -10,7 +10,7 @@ export default function AnalogToDigitalContent() {
       titleAccent="ANALOG TO DIGITAL"
       description="State-of-the-art media digitization services breathing new life into vintage archives. We convert VHS tapes, 8mm film reels, audio cassettes, slides, and photographs into pristine, high-fidelity digital formats."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1542204172-e7052809f85e?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/analogtodigital.png"
       features={[
         { title: "VHS & TAPE DIGITIZATION", description: "Converting VHS, Betamax, Hi8, and MiniDV tapes into modern MP4 or ProRes formats using high-end decks." },
         { title: "8MM & 16MM FILM SCANNING", description: "Bespoke frame-by-frame 2K/4K scanning of vintage film reels to capture deep contrast and grain details." },

@@ -10,7 +10,7 @@ export default function DigitalDesignContent() {
       titleAccent="DIGITAL IDENTITY"
       description="Innovative digital design solutions that establish powerful brand identities. We merge striking graphic artistry with strategic brand communication to help you stand out across all mediums."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1561070791-26c113006238?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/webdesign.png"
       features={[
         { title: "BRAND IDENTITY & SYSTEM", description: "Creating complete identity suites including logos, custom color schemes, typography, and brand assets." },
         { title: "PRINT & EDITORIAL", description: "Bespoke print design layouts, high-end magazines, brochures, corporate stationery, and annual reports." },

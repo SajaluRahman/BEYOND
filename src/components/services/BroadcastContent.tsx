@@ -10,7 +10,7 @@ export default function BroadcastContent() {
       titleAccent="BROADCAST QUALITY"
       description="Professional high-definition broadcast services engineered for media networks and global streaming events. We deliver absolute technical reliability and stellar visual production quality under rigid broadcast parameters."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/broadcastdesign.png"
       features={[
         { title: "TELEVISION ADVERTISING", description: "Designing cinema-grade commercials that completely comply with TV network broadcast standards and Clearcast certifications." },
         { title: "LIVE BROADCAST EVENTS", description: "Seamless multi-camera live broadcast setups for international concerts, sporting events, and corporate keynotes." },

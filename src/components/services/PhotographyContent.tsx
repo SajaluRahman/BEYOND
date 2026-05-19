@@ -10,7 +10,7 @@ export default function PhotographyContent() {
       titleAccent="VISUAL STORIES"
       description="Professional high-end photography that elevates your brand and captures your most important moments. From commercial campaigns to editorial portraits, we blend technical mastery with creative vision."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/PHOTOGRAPHY_BG_.png"
       features={[
         { title: "COMMERCIAL CAMPAIGNS", description: "High-impact visual assets for advertising, marketing campaigns, and product launches." },
         { title: "EDITORIAL & PORTRAITS", description: "Bespoke editorial photography and executive portraits that project professionalism and character." },

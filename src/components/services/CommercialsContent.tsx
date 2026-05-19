@@ -10,7 +10,7 @@ export default function CommercialsContent() {
       titleAccent="BRAND CAMPAIGNS"
       description="Show-stopping commercials that captivate audiences and drive substantial business growth. We blend cinema-grade production with strategic marketing insights to craft advertising campaigns that leave an indelible mark."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=2070"
+      heroImage="/assets/home/commercial.png"
       features={[
         { title: "CINEMATIC BRAND FILMS", description: "Narrative-driven visual epics that communicate core brand values and evoke deep audience emotion." },
         { title: "PRODUCT COMMERCIALS", description: "Sleek, visually arresting close-up showcases emphasizing features, quality, and premium placement." },
