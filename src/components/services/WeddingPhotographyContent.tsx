@@ -117,7 +117,7 @@ export default function WeddingPhotographyContent() {
       titleAccent="WEDDING STORIES"
       description="Your love story deserves to be told with cinematic brilliance. Beyond the Borders Ltd. creates timeless wedding memories with artistic photography, creative storytelling, and professional live event coverage. Whether you are planning an intimate ceremony or a grand celebration, our team delivers high-quality wedding photography and videography tailored to your special day."
       accentColor="#c9a84c"
-      heroImage="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2070"
+      heroImage="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&q=80&w=2070"
       features={[
         { title: "CINEMATIC FILMS", description: "Hollywood-grade wedding films that capture the raw emotion, laughter, tears, and joy of your special day with breathtaking cinematography." },
         { title: "PHOTOGRAPHY", description: "Timeless wedding photography blending candid moments with artistically composed portraits. Every frame tells a part of your story." },
@@ -140,7 +140,7 @@ export default function WeddingPhotographyContent() {
         { 
           title: "FOREVER BEGINS", 
           description: "An elaborate grand wedding celebration captured with multi-camera setups, drone footage, and artistic storytelling.",
-          image: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&q=80&w=2070"
+          image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2070"
         },
       ]}
       process={[
